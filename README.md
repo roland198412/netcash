@@ -16,7 +16,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "armyan/omnipay-netcash": "dev-master"
+        "armyan/omnipay-netcash": "^1.0.0"
     }
 }
 ```
