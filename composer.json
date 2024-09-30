@@ -1,5 +1,5 @@
 {
-    "name": "armyan/omnipay-netcash",
+    "name": "roland198412/omnipay-netcash",
     "type": "library",
     "description": "NetCash driver for the Omnipay Laravel Payment processing library",
     "keywords": [
@@ -11,12 +11,12 @@
         "netcash",
         "purchase"
     ],
-    "homepage": "https://github.com/armyan/omnipay-netcash",
+    "homepage": "https://github.com/roland198412/netcash",
     "license": "MIT",
     "authors": [
         {
-            "name": "Arman Karapetyan",
-            "email": "arm.karapetyan@outlook.com"
+            "name": "Roland Rieseberg",
+            "email": "dev@rieseberg.me"
         }
     ],
     "autoload": {

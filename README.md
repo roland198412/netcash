@@ -16,7 +16,7 @@ to your `composer.json` file:
 ```json
 {
     "require": {
-        "armyan/omnipay-netcash": "^1.0.0"
+        "roland198412/omnipay-netcash": "^1.0.0"
     }
 }
 ```
@@ -27,7 +27,7 @@ And run composer to update your dependencies:
 
 Or you can simply run
 
-    composer require armyan/omnipay-netcash
+    composer require roland198412/omnipay-netcash
 
 ## Basic Usage
 
