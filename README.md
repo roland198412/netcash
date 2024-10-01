@@ -44,17 +44,22 @@ Or you can simply run
     $gateway = Omnipay::create('NetCash');
     $gateway->setVendorKey(env('VENDOR_KEY'));
     $gateway->setAccountId(env('ACCOUNT_ID'));
-    $gateway->setServiceKey(env('SERVICE_KEY')); // Language
-    $gateway->setAmount(10); // Amount to charge
-    $gateway->setTransactionId(XXXX); // Transaction ID from your system
-
+    $gateway->setServiceKey(env('SERVICE_KEY'));
 ```
 
 3. Call purchase, it will automatically redirect to NetCash's hosted page
 
 ```php
 
-    $purchase = $gateway->purchase()->send();
+    $purchase = $gateway->purchase(
+            [
+                'amount' => 100, // Amount to charge
+                'transactionId' => "unique reference ", // Transaction ID from your system
+                'description' => 'description of goods - p3'  //'description of goods - p3',
+                'email' => 'your@email.com', // Email address
+                'phone' => '000000000' // Phone number
+            ]
+        )->send();
     $purchase->redirect();
 
 ```
