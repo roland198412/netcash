@@ -3,6 +3,7 @@
 namespace Omnipay\NetCash\Message;
 
 use Omnipay\Common\Message\AbstractResponse;
+use Illuminate\Support\Arr;
 
 /**
  * Class CompletePurchaseResponse
@@ -25,7 +26,7 @@ class CompletePurchaseResponse extends AbstractResponse
      */
     public function getTransactionId()
     {
-        return array_get($this->data, 'Reference');
+        return Arr::get($this->data, 'Reference');
     }
 
     /**
@@ -34,6 +35,6 @@ class CompletePurchaseResponse extends AbstractResponse
      */
     public function getTransactionReference()
     {
-        return array_get($this->data, 'RequestTrace');
+        return Arr::get($this->data, 'RequestTrace');
     }
 }
